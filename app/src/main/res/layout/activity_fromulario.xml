@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FromularioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#eee"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="#031CFB"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brand"
+            android:layout_marginTop="10dp"
+            style="@style/personalized"/>
+
+        <EditText
+            android:id="@+id/etMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/v_brand"
+            android:layout_marginTop="10dp"
+            style="@style/gray"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/model"
+            style="@style/personalized" />
+
+        <EditText
+            android:id="@+id/etModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/v_model"
+            style="@style/gray"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/color"
+                style="@style/personalized" />
+            <Spinner
+                android:id="@+id/spColors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:entries="@array/colors"
+                style="@style/gray"
+                />
+
+
+
+        <CheckBox
+            android:id="@+id/checkbox_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            style="@style/personalized"
+            android:text="@string/entered"
+            android:layout_marginTop="40dp" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:text="@string/save" />
+
+
+    </LinearLayout>
+</ScrollView>
